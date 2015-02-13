@@ -1,0 +1,104 @@
+id;filename;type;title;author;year
+1;0001.pdf;paper;A three-dimensional spatial model for plant competition in an heterogeneous soil environment;Mario Biondini;2001
+2;0002.pdf;paper;Roots, water, and nutrient acquisition: let’s get physical;Nick Chapman, Anthony J. Miller, Keith Lindsey, W. Richard Whalley;2012
+3;0003.pdf;paper;Analytical solutions of the one-dimensional advection–dispersion solute transport equation subject to time-dependent boundary conditions;J.S. Pérez Guerrero, E.M. Pontedeiro, M.Th. van Genuchten, T.H. Skaggs;2013
+4;0004.pdf;paper;Mass flow and diffusion of nutrients to a root with constant or zero-sink uptake 1. constant uptake;P. de Willigen, M. van Noordwijk;1994
+5;0005.pdf;paper;Mass flow and diffusion of nutrients to a root with constant or zero-sink uptake 2. zero-sink uptake;P. de Willigen, M. van Noordwijk;1994
+6;0006.pdf;paper;Ion Transporters and Abiotic Stress Tolerance in Plants;Fa ̈cal Brini and Khaled Masmoudi;2012
+7;0007.pdf;paper;Scaling of root length density of maize in the field profile;J. Zhuang, G.R. Yu, K. Nakayama1;2001
+8;0008.pdf;book;NIST Handbook of Mathematical Functions;Frank W. J. Olver, Daniel W. Lozier, Ronald F. Boisvert, Charles W. Clark;2010
+9;0009.pdf;book;Handbook of Mathematical Functions With Formulas, Graphs, and Mathematical Tables;Milton Abramowitz, Irene A. Stegun;1972
+10;0010.pdf;other;A Catalogue of Sturm-Liouville differential equations;W.N. Everitt;0000
+11;0011.pdf;other;Effect of Temperature on Nutritional Requirements of Plants;Michael J. Ungs, Larry Boersma, Suntaree Akratanakul;1982
+12;0012.pdf;book;Advanced Engineering Mathematics;Alan Jeffrey;2002
+13;0013.pdf;other;SWAP version 3.2. Theory description and user manual;Jos van Dam;2009
+14;0014.pdf;other;Analysis of ion content and expression of ion transporting genes in salt-stressed diploid CxE potato mapping population;Kibrom Nerhe Abreha;2010
+15;0015.pdf;other;Analytical Solutions of the One-Dimensional Convective-Dispersive Solute-Transport Equation;M. Th. van Genuchten, W. J. Alves;1982
+16;0016.pdf;paper;Transient three-dimensional modeling of soil water and solute transport with simultaneous root growth, root water and nutrient uptake;F. Somma, J.W. Hopmans, V. Clausnitzer;1998
+17;0017.pdf;paper;Water transport and balance within the plant: resistance to water flow in roots;Edwin L. Fiscus;1983
+18;0018.pdf;other;Element Concnetrations in Soils and Other Surficial Materials of the Conterminous United States;Hansford T. Shacklette, Josephine G. Boerngen;1984
+19;0019.pdf;book;dynamics of fluids in porous media;Jacob Bear;0000
+20;0020.pdf;other;Bessel Functions;Martin Kreh;0000
+21;0021.pdf;paper;Mechanistic simulation models of nutrient uptake: A review;ZDENKO RENGEL;1993
+22;0022.pdf;paper;Generalized Kinetic Analysis of Ion-Driven Cotransport Systems: II. Random Ligand Binding as a Simple Explanation for Non-Michaelian Kinetics;Dale Sanders;1986
+23;0023.pdf;book;Biochemistry;Jeremy M. Berg, John L. Tymoczko, Lubert Stryer;0000
+24;0024.pdf;book;Roots and root systems;XXX;0000
+25;0025.pdf;book;The CXTFIT Code for Estimating Transport Parameters from Laboratory or Field Tracer Experiments;N. Toride, F. J. Leij, and M. Th. van Genuchten;1995
+26;0026.pdf;paper;Root Water Extraction under Combined Water and Osmotic Stress;Q. de Jong van Lier, J.C. van Dam, K. Metselaar;2008
+27;0027.doc;other;Derivation of Convection Dispersion Equation for Porous Media;XXXX;0000
+28;0028.pdf;other;MATHEMATICAL ANALYSIS OF DIFFUSION AND MASS FLOW OF SOLUTES TO A ROOT ASSUMING CONSTANT UPTAKE;P. de Willigen;1981
+29;0029.pdf;book;Roots, plant production and nutrient use efficiency;P. de Willigen, M. van Noordwijk;1987
+30;0030.pdf;book;PLANT PRODUCTION AND NUTRIENT USE EFFICIENCY;P. de Willigen, M. van Noordwijk;1987
+31;0031.pdf;book;TRANSPIRATION AND CROP YIELDS;IR. C. T. DE WIT;0000
+32;0032.pdf;paper;Modeling of transpiration reduction in van Genuchten–Mualem type soils;Quirijn de Jong van Lier, D. Dourado Neto, Klaas Metselaar;2009
+33;0033.pdf;other;Classroom Tips and Techniques: Eigenvalue Problems for ODEs - Part 1;Robert J. Lopez;0000
+34;0034.pdf;paper;A KINETIC STUDY OF THE ABSORPTION OF ALKALI CATIONS BY BARLEY ROOTS;EMANUEL EPSTEIN, C. E. HAGEX;1951
+35;0035.docx;other;SALINITY STRESS: A study of barley on hydroponics and sand;Eva van Rijsingen;2013
+36;0036.pdf;other;SALINITY STRESS: A study of barley on hydroponics and sand;Eva van Rijsingen;2013
+37;0037.pdf;other;Notes on Sturm-Liouville Differential Equations;Charles Byrne;2009
+38;0038.pdf;book;The diffusion equation;XXXX;0000
+39;0039.pdf;book;Handbook of Mathematical Functions With Formulas, Graphs, and Mathematical Tables;Milton Abramowitz, Irene A. Stegun;1966
+40;0040.djvu;
+41;0041.djvu;
+42;0042.pdf;book;Root Water Uptake Under Non-Uniform Transient Salinity and Water Stress;Mehdi Homaee;1999
+43;0043.pdf;paper;Accounting for Solution Composition in a Plant Roots Active Nutrient Uptake Model;Iael Raij, Naftali Lazarovitch, Alan Ben-Gal, Uri Yermiyahu, Diederik Jacques;0000
+44;0044.pdf;paper;Ionic and osmotic components of salt stress specifically modulate net ion fluxes from bean leaf mesophyll;S. SHABALA;2000
+45;0045.pdf;paper;Growth Response to Ionic and Osmotic Stress of NaCl in Salt-tolerant and Salt-sensitive Maize;Ke-Fu Zhao, Jie Song, Hai Fan, San Zhou,Meng Zhao;2010
+46;0046.pdf;paper;Salt Sensitivity in Wheat: A CASE FOR SPECIFIC ION TOXICITY;RALPH W. KINGSBURY, EMANUEL EPSTEIN;1986
+47;0047.pdf;paper;Active and Passive Components of Sulfate Uptake in Sunflower Plants;SUNE PETTERSSON;1966
+48;0048.pdf;paper;Effect of Root Water and Solute Uptake on Apparent Soil Dispersivity: A Simulation Study;Natalie Schröder,Mathieu Javaux,Jan Vanderborght,Bernhard Steffen,Harry Vereecken;2012
+49;0049.pdf;paper;ARBUSCULAR MYCORRHIZA AND KINETIC PARAMETERS OF PHOSPHORUS ABSORPTION BY BEAN PLANTS;Adriana Parada Dias da Silveira, Elke Jurandy Bran Nogueira Cardoso;2004
+50;0050.pdf;paper;Potassium Transport in Corn Roots. I. RESOLUTION OF KINETICS INTO A SATURABLE AND LINEAR COMPONENT;LEON V. KOCHIAN, WILLIAM J. LUCAS;1982
+51;0051.pdf;book;NSWC LIBRARY OF MATHEMATICS SUBROUTINES;ALFRED H. MORRIS, JR.;1993
+52;0052.pdf;book;Mathematical Model of Plant Nutrient Uptake;Tiina Roose;2000
+53;0053.pdf;paper;Sodium and potassium uptake of rice panicles as affected by salinity and season in relation to yield and yield components;Folkard Asch, Michael Dingkuhn, Christine Wittstock, Karl Doerffling;1999
+54;0054.pdf;paper;A TRANSPORT KINETIC CONCEPT OF ION UPTAKE FROM SOIL BY PLANTS II. THE CONCEPT AND SOME THEORETIC CONSIDERATIONS;NIELS ERIK NIELSEN;0000
+55;0055.pdf;paper;On water availability in saline soils;P. H. Groenevelt, C.D.Grant, R. S. Murray;2004
+56;0056.pdf;paper;Is osmotic potential a more appropriate property than electrical conductivity for evaluating whole-plant response to salinity?;Alon Ben-Gal, Hamutal Borochov-Neori, Uri Yermiyahu, Uri Shani;2009
+57;0057.pdf;book;Heat conduction;M. Necati Özisik;1993
+58;0058.pdf;book;Partial Differential Equations and Boundary Value Problems with Maple;George A. Articolo;2009
+59;0059.pdf;thesis;POSIÇÃO DOS GOTEJADORES E COBERTURA DO SOLO COM PLÁSTICO, CRESCIMENTO RADICULAR, PRODUTIVIDADE E QUALIDADE DO MELÃO;Carina Rejane Pivetta;2010
+60;0060.pdf;other;Plant mineral nutrient uptake;XXXX;0000
+61;0061.pdf;paper;Potassium Transport in Corn Roots I. RESOLUTION OF KINETICS INTO A SATURABLE AND LINEAR COMPONENT;LEON V. KOCHIAN, WILLIAM J. LUCAS;1982
+62;0062.pdf;paper;An Interpretation of Some Whole Plant Water Transport Phenomena;EDWIN L. Fiscus, ARNOLD KLUTE, MERRILL R. KAUFMANN;1983
+63;0063.pdf;other;Reference Manual SWAP version 3.0.3;J.G. Kroes, J.C. van Dam;2003
+64;0064.pdf;thesis;Mathematical Model of Plant Nutrient Uptake;Tiina Roose;2000
+65;0065.pdf;book;Current capabilities and future needs of root water and nutrient uptake modeling;Jan W. Hopmans, Keith L. Bristow;0000
+66;0066.pdf;book;Salinity Stress and Salt Tolerance;Petronia Carillo, Maria Grazia Annunziata, Giovanni Pontecorvo, Amodio Fuggi, Pasqualina Woodrow;0000
+67;0067.pdf;paper;Irrigation of grapevines with saline water II. Mathematical simulation of vine growth and yield;J. Ben-Asher, J. van Dam, R.A. Feddes, R.K. Jhorar;2006
+68;0068.pdf;paper;Modeling compensated root water and nutrient uptake;Jirí Simunek, Jan W. Hopmans;2009
+69;0069.pdf;paper;Some exact solutions of convection-diffusion and diffusion equations;J. R. Philip;1994
+70;0070.pdf;paper;Plants for constructed wetland treatment systems - A comparison of the growth and nutrient uptake of eight emergent species;Chris C. Tanner;1996
+71;0071.pdf;book;THE MATHEMATICS OF DIFFUSION;J. Crank;1975
+72;0072.pdf;paper;Closed Form Solution for Time!dependent Enzyme Kinetics;S. SCHNELL, C. MENDOZA;1997
+73;0073.pdf;book;A Guide to Numerical Methods for Transport Equations;Dmitri Kuzmin;2010
+74;0074.pdf;book;Elementary Differential Equations and Boundary Value Problems;William E. Boyce, Richard C. DiPrima;2001
+75;0075.pdf;paper;Modeling soil water movement with water uptake by roots;Jinquan Wu, Renduo Zhang, Shengxiang Gui;1999
+76;0076.pdf;other;SWAP version 3.2 Theory description and user manual;J.G. Kroes, J.C. Van Dam;2008
+77;0077.pdf;paper;Absorção de Macronutrientes pela Cultura do Milho sobre Diferentes Coberturas;Wander Luis Barbosa Borges, Rogério Soares de Freitas, Gustavo Pavan Mateus, Marco Eustáquio de Sá, Marlene Cristina Alves, Edvaldo Novelli Gomes;2012
+78;0078.pdf;other;Boundary Value Problems for Linear PDEs with Variable Coefficients;A.S. Fokas;2003
+79;0079.pdf;paper;Salt tolerance of flower crops grown in soilless culture;C. Sonneveld , R. Baas , H. M. C. Nijssen, J. de Hoog;2008
+80;0080.pdf;paper;Genotypic Differences of Corn for Ion Uptake;V. C. Baligar, S. A. Barber;1978
+81;0081.pdf;paper;SOIL-PLANT RELATIONSHIPS IN ION UPTAKE;MAURICE FRIED, RAYMOND E. SHAPIRO;1961
+82;0082.pdf;paper;Kinetics of Enzymatic Hydrolysis of Sodium Carboxymethylcellulose with Different Degrees of Polymerization by Cellulase;Methodi Chetkarov, Lachezar Karagyozov, Todor Nikolov, Dimiter Kolev;1986
+83;0083.pdf;paper;INTERACTIONS IN THE POTASSIUM AND SODIUM ABSORPTION BY INTACT MAIZE SEEDLINGS;G. G. J. BANGE;1959
+84;0084.pdf;paper;AN EXPERIMENTAL METHOD OF IDENTIFYING AND QUANTIFYING THE ACTIVE TRANSFER ELECTROGENIC COMPONENT FROM THE DIFFUSIVE COMPONENT DURING SUGAR ABSORPTION MEASURED IN VIVO;E. S. DEBNAM, R. J. LEVIN;1975
+85;0085.pdf;other;Equações Diferenciais Parciais;Ulysses Sodré;2003
+86;0086.pdf;other;Equações Diferenciais Parciais: Uma Introducao (Versão Preliminar);Reginaldo J. Santos;2011
+87;0087.pdf;book;Salinity Stress and Salt Tolerance;Petronia Carillo, Maria Grazia Annunziata, Giovanni Pontecorvo, Amodio Fuggi, Pasqualina Woodrow;0000
+88;0088.pdf;paper;Salt Sensitivity in Wheat. A CASE FOR SPECIFIC ION TOXICITY;RALPH W. KINGSBURY, EMANUEL EPSTEIN;1985
+89;0089.pdf;paper;Sodium-calcium interactions in two wheat species differing in salinity tolerance;R. J. Davenport, R. J. Reid, F, A. Smith;1997
+90;0090.pdf;paper;ACTIVE TRANSPORT OF SALT INTO PLANT TISSUE;GEORGE G. LATIES;1959
+91;0091.pdf;book;PLANT GROWTH AND DEVELOPMENT UNDER SALINITY STRESS;A. LÄUCHLI, S.R. GRATTAN;2007
+92;0092.pdf;paper;Modelling plant nutrition of horticultural crops: a review;J. Le Bot, S. Adamowicz, P. Robin;1998
+93;0093.pdf;paper;DIVISION S-4—SOIL FERTILITY AND PLANT NUTRITION. Effect of Soil pH on the Availability of Magnesium to Corn (Zea mays L.) from Magnesium Sulfate and High Magnesium Liming Materials;NOBLE R. USHERWOOD, JAMES R. MiLLER;1967
+94;0094.pdf;paper;Soil magnesium level, corn (Zea mays L.) yield, and magnesium uptake;R. H. Fox, W. P. Piekielek;2013
+95;0095.pdf;other;Using the Fourier Transform to Solve PDEs;XXXX;2007
+96;0096.pdf;paper;A Method for Characterizing the Relation between Nutrient Concentration and Flux into Roots of Intact Plants;NORBERT CLAASSEN, STANLEY A. BARBER;1974
+97;0097.pdf;paper;Regulation of Potassium Absorption in Barley Roots. AN ALLOSTERIC MODEL;ANTHONY D. M. GLASS;1976
+98;0098.pdf;paper;Influx of Na+, K+, and Ca2+ into Roots of Salt-Stressed Cotton Seedlings;GRANT R. CRAMER, JONATHAN LYNCH, ANDRE LAUCHLI, EMANUEL EPSTEIN;1987
+99;0099.pdf;paper;RADICULAR UPTAKE KINETICS OF 15NO-, 15NH4+, CO(15NH2)2, IN WHOLE RICE PLANTS;Ana Beatriz Anti, Jefferson Mortatti, Paulo Cesar, Ocheuze Trivelin, Jose Albertino Bendassolli;2013
+100;0100.pdf;paper;An empirical model to simulate sodium absorption in roses growing in a hydroponic system;Daniele Massa, Neil S. Mattson, Heinrich Lieth;2008
+101;0101.pdf;book;Plant Response to Salt Stress and Role of Exogenous Protectants to Mitigate Salt-Induced Damages;Mirza Hasanuzzaman, Kamrun Nahar, Masayuki Fujita;2013
+102;0102.pdf;paper;A model for nutrient and water flow and their uptake by plants grown in a soilless culture;M. Silberbush1, J. Ben-Asher, J.E. Ephrath;2005
+103;0103.pdf;paper;Sodium transport in plants: a critical review;Herbert J. Kronzucker, Dev T. Britto;2010
