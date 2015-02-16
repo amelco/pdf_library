@@ -56,4 +56,5 @@ echo $year
 echo $type
 
 # Verificar o ultimo numero do arquivo de dados
-# Adicionar um novo registro nbo arquivo de dados
+# Adicionar um novo registro no arquivo de dados
+# renomear o PDF
