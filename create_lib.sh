@@ -23,7 +23,7 @@ while [ $li -le "$((tot_lines))" ]; do
   awk "NR>=${li}&&NR<=${le}{print;}" tmp.txt 
   echo
   echo "======================================="
-  echo "[p]revious; [s]top; [n]ext"
+  printf "[p]revious; [s]top; [n]ext "
   read -r -n1 key
   echo
   if [ "$key" = "s" ] || [ "$key" = "S" ]; then
@@ -41,24 +41,25 @@ while [ $li -le "$((tot_lines))" ]; do
 done
 
 # 
+echo "======================================="
 echo "Write the variable values:"
 echo 
 printf "Title: "
 read -r title
 printf "Year: "
 read -r year
-printf "Author: "
+printf "Author(s): "
 read -r author
 printf "Type ([p]aper; [b]ook; [o]ther):"
 read -r -n1 key
   if [ "$key" = "p" ] || [ "$key" = "P" ]; then
-    type='Paper'
+    type='paper'
   elif [ "$key" = "b" ] || [ "$key" = "B" ]; then
-    type='Book'
+    type='book'
   elif [ "$key" = "o" ] || [ "$key" = "O" ]; then
-    type='Other'
+    type='other'
   else
-    type='Other'
+    type='other'
   fi
 echo
 echo
@@ -69,7 +70,12 @@ echo $year
 echo $type
 
 # Verificar o ultimo numero do arquivo de dados
+id='101'
 # Adicionar um novo registro no arquivo de dados
 # renomear o PDF
+newfilename='0101.pdf'
+
+echo
+echo "$id;$newfilename;$type;$title;$author;$year"
 
 #rm tmp.txt
