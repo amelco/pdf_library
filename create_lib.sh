@@ -13,7 +13,7 @@ key="n"					# key pressed
 pdftotext -f 1 -l 1 ${filename} tmp.txt
 
 # scans the file at each $inc lines
-while [[ "$le" != "$((tot_lines + inc))" ]]; do
+while [ $le -le "$((tot_lines + inc))" ]; do
   clear
   awk "NR>=${li}&&NR<=${le}{print;}" tmp.txt 
   li=$((li + inc))
