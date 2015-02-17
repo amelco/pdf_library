@@ -4,7 +4,7 @@ Program to manage academic papers (and relateds)
 The program is basically several bash scripts encapsulated in a FORTRAN program. 
 The file main.f90 contains the structure of the program in which each action (subroutine) is one or more bash commands. It uses a lot of system calls to execute those commands or scripts.
 
-The program simply links a text file containing title, author, year and type informations of a PDF file (database) to its respective PDF file.
+The program simply links a text file containing title, author, year and type informations of a PDF file (database, .dat files) to its respective PDF file.
 All PDF files must be together in the same directory.
 Once the text database is created, the program can:
 * show to the user the pdf files sorted by author, year, title;
