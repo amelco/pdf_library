@@ -17,9 +17,9 @@ The user can do some configuration in the program, like:
 * Chose a PDF viewer (evince or okular);
 
 Some separated scripts, let us call them subprograms, are in the same directory of the main program. They are:
-get_ref.sh              : get BiBTeX references from internet 
-create_ini_database.sh  : create a initial sketch of the database file 
-create_lib.sh           : create a new register in the database file from a PDF file (user oriented)
+* get_ref.sh				: get BiBTeX references from internet 
+* create_ini_database.sh	: create a initial sketch of the database file 
+* create_lib.sh				: create a new register in the database file from a PDF file (user oriented)
 
 *== TO DO section ==*
 - script that creates automatically the pdf databse. The user just need to say in which directory the files are.
