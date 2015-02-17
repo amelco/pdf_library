@@ -12,7 +12,7 @@ Once the text database is created, the program can:
 * do search for words inside the PDF text;
 * get from internet the BiBTeX references;
 
-The user can do some configuration in the program, like:
+The user can do some configuration in the program, like (this is stored in settings.in):
 * Have several databases and select each one will be used;
 * Chose a PDF viewer (evince or okular);
 
@@ -21,7 +21,16 @@ Some separated scripts, let us call them subprograms, are in the same directory 
 * create_ini_database.sh	: create a initial sketch of the database file 
 * create_lib.sh				: create a new register in the database file from a PDF file (user oriented)
 
+*== Dependencies ==*
+* awk
+* lynx
+* vim
+* curl
+* evince or okular
+* pdftotext
+
 *== TO DO section ==*
 - script that creates automatically the pdf databse. The user just need to say in which directory the files are.
 - execute automatically the script 'create_lib.sh' (in a terminal) every time a PDF file is downloaded (Chrome or Firefox plugin)
+- put reader in the settings.in file
 - and more to think about...
