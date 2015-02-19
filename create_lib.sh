@@ -2,6 +2,17 @@
 # User oriented program that sweeps all pdf files of a directory and
 # makes OCR, asking for the proper variables values.
 
+
+if [ $# -eq 0 ]; then
+  # No arguments supplied
+  echo "Type the path of the directory containing the PDFs you want to put in the database:"
+  read -r dir
+else
+  # First argument is the directory
+  dir=$1
+fi
+
+
 filename='cushman_1979.pdf'		# name of the file to be OCRed
 filename='s06.pdf'		# name of the file to be OCRed
 filename='[Daniel_Hillel_(Auth.)]_Applications_of_Soil_Physi(BookZZ.org).pdf'		# name of the file to be OCRed
