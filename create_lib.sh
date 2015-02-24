@@ -5,6 +5,7 @@
 filename='cushman_1979.pdf'		# name of the file to be OCRed
 filename='s06.pdf'		# name of the file to be OCRed
 filename='[Daniel_Hillel_(Auth.)]_Applications_of_Soil_Physi(BookZZ.org).pdf'		# name of the file to be OCRed
+filename='10.pdf'		# name of the file to be OCRed
 tot_lines=$(cat tmp.txt | wc -l)	# total of lines in the OCRed file
 li=0					# initial line
 inc=50					# increment
