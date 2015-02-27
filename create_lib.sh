@@ -1,8 +1,25 @@
 #!/bin/bash
+#
+##########################################################################################################################################
 # User oriented program that sweeps all pdf files of a directory and
 # makes OCR, asking for the proper variables values.
+#
+### OBS.: In this first version:
+# * the script has to be located in the same directory of the pdfs;
+# * a new directory is created to store the renamed pdf files;
+# * the renamed pdf files are COPIED to the new directory, so you still have the files with the original names;
+# * a temporary txt file (filenames.txt) is created with the names of the original pdf files. The script deletes this file in the end
+# * a temporary txt file (tmp.txt) containing the OCRed pdf text is created. The script deletes this file in the end
+#
+##########################################################################################################################################
 
-### Initialy, put the script into the directory of the pdfs
+### TO DO:
+# * hability of stopping in the middle of the process and, later, begin where it has stopped
+# * hability of go back to the previous entry to correct some mistake ocasionally made
+##########
+
+
+## For further version: the directory that contains the pdf files is asked if no argument is given
 #if [ $# -eq 0 ]; then
 #  # No arguments supplied
 #  echo "Type the path of the directory containing the PDFs you want to put in the database:"
@@ -13,36 +30,51 @@
 #fi
 #
 
+#### Parameters that can be changed by the user ###################################
+# new database filename
+newDBfilename='newDB.txt'
+# new directory for the renamed pdf files
+newdir='renamed_pdfs'
+# number of lines of the current pdf file to be shown on the screen at once
+inc=40
+###################################################################################
+
+
+
+#### Beginning of the process. User can not change anything here##################
+
 #cleaning and creating the newdatabase file
-echo "" > newDB.txt
+echo "" > $newDBfilename
 # creates a txt file with all pdf filenames (full extension)
 ls *.pdf > filenames.txt
 #asks for last number of pdf file of the original database
 echo "What is the last number of the database?"
 read -r id
 #creates a new directory to store the renamed pdf files
-newdir='renamed_pdfs'
 mkdir $newdir
 
 OLDIFS=$IFS
 IFS=$'\n'
 for line in $(cat filenames.txt)
 do
-#Beginning of the loop #############################################################
-# OCr the file to a temporary txt file
+### Beginning of the loop ################
+# OCR the file to a temporary txt file
+echo
+echo "OCRing the next file... please wait"
 pdftotext ${line} tmp.txt
+echo
+echo "OCR complete!"
 
 tot_lines=$(cat tmp.txt | wc -l)	# total of lines in the OCRed file
 li=0					# initial line
-inc=40					# increment
 le=$inc					# end line
-key="n"					# key pressed
+key="n"					# key pressed ('n' is default)
 
 #echo
 #echo "#lines: ${tot_lines}"
 #read
 
-# scans the file at each $inc lines
+# scans tmp.txt file at each $inc lines
 while [ $li -le "$((tot_lines))" ]; do
   clear
   awk "NR>=${li}&&NR<=${le}{print;}" tmp.txt 
@@ -65,7 +97,6 @@ while [ $li -le "$((tot_lines))" ]; do
   fi
 done
 
-# 
 echo "======================================="
 echo "Write the variable values:"
 echo 
@@ -94,30 +125,33 @@ echo $author
 echo $year
 echo $type
 
-# Verificar o ultimo numero do arquivo de dados - now done with user inpit at the beginning of the script
+# Further version: verify the last number of datafile (now, this is done with user input at the beginning of the script)
 #id='101'
 # Adicionar um novo registro no arquivo de dados
 # copia PDF para novo diretorio, mantendo o PDF original
 id=$((id+1))
 newfilename="$id.pdf"
 
+# Shows the new register that will be added in the new database file
 echo
 echo "$id;$newfilename;$type;$title;$author;$year"
-echo "$id;$newfilename;$type;$title;$author;$year" >> newDB.txt
+echo "$id;$newfilename;$type;$title;$author;$year" >> $newDBfilename
+
+# Copy and renames the pdf file to the new directory
 cp $line "$newdir/$newfilename"
+
 echo
 echo "$line has been renamed to $newfilename and copied to $newdir/"
-echo
-echo "OCRing the next file... please wait"
 read
-############################################################################
+### End of loop ##########
 done
 IFS=$OLDIFS
-cp newDB.txt "$newdir/."
+
+cp "$newDBfilename $newdir/."
+rm filenames.txt
+rm tmp.txt
 echo
-echo "Database file newDB.txt copied to $newdir/"
+echo "Database file $newDBfilename has been copied to $newdir/"
 echo
 echo "Done!"
 echo
-
-#rm tmp.txt
