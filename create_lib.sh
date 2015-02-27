@@ -13,14 +13,16 @@
 #fi
 #
 
+#cleaning and creating the newdatabase file
+echo "" > newDB.txt
 # creates a txt file with all pdf filenames (full extension)
 ls *.pdf > filenames.txt
 #asks for last number of pdf file of the original database
 echo "What is the last number of the database?"
 read -r id
 #creates a new directory to store the renamed pdf files
-new_dir='renamed_pdfs'
-mkdir $new_dir
+newdir='renamed_pdfs'
+mkdir $newdir
 
 OLDIFS=$IFS
 IFS=$'\n'
@@ -96,12 +98,26 @@ echo $type
 #id='101'
 # Adicionar um novo registro no arquivo de dados
 # copia PDF para novo diretorio, mantendo o PDF original
-id=$id+1
-newfilename='0101.pdf'
+id=$((id+1))
+newfilename="$id.pdf"
 
 echo
 echo "$id;$newfilename;$type;$title;$author;$year"
+echo "$id;$newfilename;$type;$title;$author;$year" >> newDB.txt
+cp $line "$newdir/$newfilename"
+echo
+echo "$line has been renamed to $newfilename and copied to $newdir/"
+echo
+echo "OCRing the next file... please wait"
+read
 ############################################################################
 done
 IFS=$OLDIFS
+cp newDB.txt "$newdir/."
+echo
+echo "Database file newDB.txt copied to $newdir/"
+echo
+echo "Done!"
+echo
+
 #rm tmp.txt
