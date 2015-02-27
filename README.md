@@ -30,7 +30,7 @@ Some separated scripts, let us call them subprograms, are in the same directory 
 * pdftotext
 
 *== TO DO section ==*
-- script that creates automatically the pdf databse. The user just need to say in which directory the files are.
+- script that creates automatically the pdf databse. The user just need to say in which directory the files are (the current version has a user oriented script).
 - execute automatically the script 'create_lib.sh' (in a terminal) every time a PDF file is downloaded (Chrome or Firefox plugin)
 - put reader in the settings.in file
 - and more to think about...
