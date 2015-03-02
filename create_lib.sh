@@ -12,10 +12,12 @@
 # * a temporary txt file (tmp.txt) containing the OCRed pdf text is created. The script deletes this file in the end
 #
 ##########################################################################################################################################
-
+#
+# Developed by Andre Herman
+#
 ### TO DO:
-# * hability of stopping in the middle of the process and, later, begin where it has stopped
-# * hability of go back to the previous entry to correct some mistake ocasionally made
+# * hability to stop in the middle of the process and, later, begin where it has stopped
+# * hability to go back to the previous entry to correct some mistake ocasionally made
 ##########
 
 
@@ -68,7 +70,7 @@ echo "OCR complete!"
 tot_lines=$(cat tmp.txt | wc -l)	# total of lines in the OCRed file
 li=0					# initial line
 le=$inc					# end line
-key="n"					# key pressed ('n' is default)
+key="n"					# key pressed ('n' is default => [n]ext)
 
 #echo
 #echo "#lines: ${tot_lines}"
