@@ -57,96 +57,96 @@ mkdir $newdir
 
 OLDIFS=$IFS
 IFS=$'\n'
-for line in $(cat filenames.txt)
-do
 ### Beginning of the loop ################
-# OCR the file to a temporary txt file
-echo
-echo "OCRing the next file... please wait"
-pdftotext ${line} tmp.txt
-echo
-echo "OCR complete!"
-
-tot_lines=$(cat tmp.txt | wc -l)	# total of lines in the OCRed file
-li=0					# initial line
-le=$inc					# end line
-key="n"					# key pressed ('n' is default => [n]ext)
-
-#echo
-#echo "#lines: ${tot_lines}"
-#read
-
-# scans tmp.txt file at each $inc lines
-while [ $li -le "$((tot_lines))" ]; do
-  clear
-  awk "NR>=${li}&&NR<=${le}{print;}" tmp.txt 
+for line in $(cat filenames.txt)
+  do
+  # OCR the file to a temporary txt file
   echo
+  echo "OCRing the next file... please wait"
+  pdftotext ${line} tmp.txt
+  echo
+  echo "OCR complete!"
+  
+  tot_lines=$(cat tmp.txt | wc -l)	# total of lines in the OCRed file
+  li=0					# initial line
+  le=$inc					# end line
+  key="n"					# key pressed ('n' is default => [n]ext)
+  
+  #echo
+  #echo "#lines: ${tot_lines}"
+  #read
+  
+  # scans tmp.txt file at each $inc lines
+  while [ $li -le "$((tot_lines))" ]; do
+    clear
+    awk "NR>=${li}&&NR<=${le}{print;}" tmp.txt 
+    echo
+    echo "======================================="
+    printf "[p]revious; [s]top; [n]ext "
+    read -r -n1 key
+    echo
+    if [ "$key" = "s" ] || [ "$key" = "S" ]; then
+      break
+    elif [ "$key" = "p" ] || [ "$key" = "P" ]; then
+      li=$((li - inc))
+      le=$((le - inc))
+    elif [ "$key" = "n" ] || [ "$key" = "N" ]; then
+      li=$((li + inc))
+      le=$((le + inc))
+    else
+      li=$((li + inc))
+      le=$((le + inc))
+    fi
+  done
+  
   echo "======================================="
-  printf "[p]revious; [s]top; [n]ext "
+  echo "Write the variable values:"
+  echo 
+  printf "Title: "
+  read -r title
+  printf "Year: "
+  read -r year
+  printf "Author(s): "
+  read -r author
+  printf "Type ([p]aper; [b]ook; [o]ther):"
   read -r -n1 key
+    if [ "$key" = "p" ] || [ "$key" = "P" ]; then
+      type='paper'
+    elif [ "$key" = "b" ] || [ "$key" = "B" ]; then
+      type='book'
+    elif [ "$key" = "o" ] || [ "$key" = "O" ]; then
+      type='other'
+    else
+      type='other'
+    fi
   echo
-  if [ "$key" = "s" ] || [ "$key" = "S" ]; then
-    break
-  elif [ "$key" = "p" ] || [ "$key" = "P" ]; then
-    li=$((li - inc))
-    le=$((le - inc))
-  elif [ "$key" = "n" ] || [ "$key" = "N" ]; then
-    li=$((li + inc))
-    le=$((le + inc))
-  else
-    li=$((li + inc))
-    le=$((le + inc))
-  fi
+  echo
+  
+  echo $title
+  echo $author
+  echo $year
+  echo $type
+  
+  # Further version: verify the last number of datafile (now, this is done with user input at the beginning of the script)
+  #id='101'
+  # Adicionar um novo registro no arquivo de dados
+  # copia PDF para novo diretorio, mantendo o PDF original
+  id=$((id+1))
+  newfilename="$id.pdf"
+  
+  # Shows the new register that will be added in the new database file
+  echo
+  echo "$id;$newfilename;$type;$title;$author;$year"
+  echo "$id;$newfilename;$type;$title;$author;$year" >> $newDBfilename
+  # Copy and renames the pdf file to the new directory
+  cp $line "$newdir/$newfilename"
+  
+  echo
+  echo "$line has been renamed to $newfilename and copied to $newdir/"
+  echo
+  echo "OCRing the next file... please wait"
 done
-
-echo "======================================="
-echo "Write the variable values:"
-echo 
-printf "Title: "
-read -r title
-printf "Year: "
-read -r year
-printf "Author(s): "
-read -r author
-printf "Type ([p]aper; [b]ook; [o]ther):"
-read -r -n1 key
-  if [ "$key" = "p" ] || [ "$key" = "P" ]; then
-    type='paper'
-  elif [ "$key" = "b" ] || [ "$key" = "B" ]; then
-    type='book'
-  elif [ "$key" = "o" ] || [ "$key" = "O" ]; then
-    type='other'
-  else
-    type='other'
-  fi
-echo
-echo
-
-echo $title
-echo $author
-echo $year
-echo $type
-
-# Further version: verify the last number of datafile (now, this is done with user input at the beginning of the script)
-#id='101'
-# Adicionar um novo registro no arquivo de dados
-# copia PDF para novo diretorio, mantendo o PDF original
-id=$((id+1))
-newfilename="$id.pdf"
-
-# Shows the new register that will be added in the new database file
-echo
-echo "$id;$newfilename;$type;$title;$author;$year"
-echo "$id;$newfilename;$type;$title;$author;$year" >> $newDBfilename
-
-# Copy and renames the pdf file to the new directory
-cp $line "$newdir/$newfilename"
-
-echo
-echo "$line has been renamed to $newfilename and copied to $newdir/"
-read
 ### End of loop ##########
-done
 IFS=$OLDIFS
 
 cp "$newDBfilename $newdir/."
