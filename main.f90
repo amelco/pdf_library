@@ -143,6 +143,7 @@ implicit none
         !cmd = 'evince '//trim(adjustl(path))//'`cat '//datafile//' | grep -i '''//trim(adjustl(slc))//';'' | awk ''BEGIN{FS=";"}{print $2}'' | head -1`'
         cmd = reader//' '//trim(adjustl(path))//'`cat '//datafile//' | grep -i '''// &
            trim(adjustl(slc))//';'' | awk ''BEGIN{FS=";"}{print $2}'' | head -1`'//"& > /dev/null 2>&1"
+        print*, cmd
 	call system(cmd)
 	slc = "I"
     end select
