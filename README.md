@@ -29,8 +29,12 @@ Some separated scripts, let us call them subprograms, are in the same directory 
 * evince or okular
 * pdftotext
 
+*== UPDATES ==*
+- script that creates automatically the pdf databse. The user just need to say in which directory the files are (the current version has a user oriented script). DONE!
+- Do an OCR in all PDF files and save them with txt extension. This makes search within the file contents faster.
+
 *== TO DO section ==*
-- script that creates automatically the pdf databse. The user just need to say in which directory the files are (the current version has a user oriented script).
+- Modify the script to search within the file content to search in txt files instead of PDF.
 - execute automatically the script 'create_lib.sh' (in a terminal) every time a PDF file is downloaded (Chrome or Firefox plugin)
 - put reader in the settings.in file
 - and more to think about...
