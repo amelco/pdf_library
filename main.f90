@@ -26,6 +26,8 @@ do while (opt .ne. "Q" .and. opt .ne. "q")
       call bib_search()
     case("4")
       call bib_create()
+    case("5")
+      call OCR()
     case("B","b")
       call choose_DB()
     case("C", "c")
@@ -53,8 +55,9 @@ print*
 print*, " Choose an option:"
 print*, " [1] Search by author or title"
 print*, " [2] Search string inside text"
-print*, " [3] Make a BiBTex search"
+print*, " [3] Make a BiBTex search (online)"
 print*, " [4] Create a BiBTex file (soon)"
+print*, " [5] OCR all PDF's"
 print*
 print*, " [B] Choose database"
 print*, " [C] View/Change settings"
@@ -261,6 +264,21 @@ implicit none
     "bib file"
   read(*,*)
 
+end subroutine
+
+subroutine OCR()
+implicit none
+  character (500) :: cmd
+
+  !creates a txt file with all pdf filenames (full extension)
+  cmd = 'ls '//trim(adjustl(path))//'*.pdf > filenames.txt'
+  call system(cmd)
+  !OCRs all PDF files and save with same filename and txt extension
+  cmd = 'for line in $(cat filenames.txt);do echo "OCRing ${line}...";pdftotext ${line} ${line}.txt;echo "done!";done'
+  call system(cmd)
+  cmd = 'echo;echo "All files OCRed! Press any key to go to menu."; rm filenames.txt'
+  call system(cmd)
+  read(*,*)
 end subroutine
 
 subroutine show_settings()
